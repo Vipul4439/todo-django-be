@@ -51,3 +51,10 @@ def delete_todo(todo_id: str):
         raise HTTPException(status_code=404, detail="ToDo item not found")
     del todo_db[todo_id]
     return {"message": "ToDo item deleted successfully"}
+
+
+import uvicorn
+
+if __name__ == "__main__":
+    port = int(os.getenv("PORT", 8000))  # Use PORT from environment or default to 8000
+    uvicorn.run(app, host="0.0.0.0", port=port)
