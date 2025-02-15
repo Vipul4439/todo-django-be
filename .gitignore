@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+*.venv
+
+# Django-related
+*.log
+*.pot
+*.pyc
+*.pyo
+db.sqlite3  # Ignore SQLite database file
+*.sqlite3
+
+# Media and static files
+/media/
+staticfiles/
+
+# Environment variables and secrets
+.env
+*.pem
+config/settings/local.py  # If you have separate settings for local development
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS system files
+.DS_Store
+
+# Node.js dependencies (if using frontend with Django)
+node_modules/
+
+# Migrations (optional, you might want to keep them in version control)
+*/migrations/*.py
+!*/migrations/__init__.py
